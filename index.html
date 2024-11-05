@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css"
+        rel="stylesheet"
+        />
+  </head>
+  <body class="bg-light">
+    <div id="app">
+        <div class="bg-primary text-white text-center container">
+            <h1>ADHAN</h1>
+            <h2>{{dateNow}}</h2>
+            <h3>{{formattedTime}}</h3>
+        </div>
+        <div class="bg-primary container">
+            <div class="row m-2">
+                <div class="col-sm-4">
+                    <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">As-sobh</h3>
+                        <h5 class="card-text text-center py-5">{{sobh}}</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Al-chourouq</h3>
+                        <h5 class="card-text text-center py-5">{{chourouq}}</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Ad-dohr</h3>
+                        <h5 class="card-text text-center py-5">{{dohr}}</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-2">
+                <div class="col-sm-4">
+                    <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Al-asr</h3>
+                        <h5 class="card-text text-center py-5">{{asr}}</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Al-maghrib</h3>
+                        <h5 class="card-text text-center py-5">{{maghrib}}</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Al-ichae</h3>
+                        <h5 class="card-text text-center py-5">{{ichae}}</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-lg btn-primary" @click="">fetch</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
